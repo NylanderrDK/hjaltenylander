@@ -8,11 +8,10 @@ import { GigList } from "@/components/gig-list";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DJ Hjalte Nylander — Danish DJ" },
+      { title: "DJ Hjalte Nylander" },
       {
         name: "description",
-        content:
-          "Danish DJ Hjalte Nylander — clubs, festivals, private and corporate events. View tour dates and book your event.",
+        content: "Danish DJ Hjalte Nylander — klub, festival, privat og corporate.",
       },
     ],
   }),
@@ -26,7 +25,7 @@ function Index() {
       <section className="relative overflow-hidden bg-primary text-primary-foreground">
         <img
           src={heroImg}
-          alt="DJ Hjalte Nylander performing"
+          alt="DJ Hjalte Nylander live"
           className="absolute inset-0 h-full w-full object-cover opacity-50"
           width={1920}
           height={1280}
@@ -34,25 +33,27 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/40 to-primary" />
         <div className="container-narrow relative grid min-h-[90vh] items-end gap-12 py-24">
           <div>
-            <p className="eyebrow text-primary-foreground/70">Danish DJ · est. Copenhagen</p>
+            <p className="eyebrow text-primary-foreground/70">DJ · est. Hobro</p>
             <h1 className="display-xl mt-6 max-w-4xl text-balance">
-              Hjalte<br />Nylander.
+              Hjalte
+              <br />
+              Nylander.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-primary-foreground/80">
-              Clubs, festivals, private &amp; corporate events, and artist support — delivered with precision and energy.
+              Klub, festival, privat &amp; corporate events, og support for artister.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-cream px-6 py-3 text-sm font-medium text-ink transition-transform hover:translate-y-[-1px]"
               >
-                Book a date <ArrowRight className="h-4 w-4" />
+                Bookingforespørgsel <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/tour"
                 className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-6 py-3 text-sm font-medium hover:bg-primary-foreground/10"
               >
-                See tour
+                Se tourplan
               </Link>
             </div>
           </div>
@@ -69,14 +70,17 @@ function Index() {
         </div>
         <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
           <p>
-            Hjalte Nylander is a Danish DJ working across the Nordic and European scene — from
-            late-night club residencies to main-stage festival slots and intimate private events.
+            Hjalte Nylander is a Danish DJ working across the Nordic and European scene — from late-night club
+            residencies to main-stage festival slots and intimate private events.
           </p>
           <p>
-            His sets blend driving house and melodic energy with a sharp ear for the dancefloor —
-            crafted in real time, never from a USB on autopilot.
+            His sets blend driving house and melodic energy with a sharp ear for the dancefloor — crafted in real time,
+            never from a USB on autopilot.
           </p>
-          <Link to="/about" className="inline-flex items-center gap-1 text-sm font-medium underline-offset-4 hover:underline">
+          <Link
+            to="/about"
+            className="inline-flex items-center gap-1 text-sm font-medium underline-offset-4 hover:underline"
+          >
             Read more <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
@@ -88,9 +92,7 @@ function Index() {
           <div className="flex items-end justify-between gap-6">
             <div>
               <p className="eyebrow">Why book</p>
-              <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">
-                Built for the moment.
-              </h2>
+              <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">Built for the moment.</h2>
             </div>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
@@ -136,10 +138,7 @@ function Index() {
             <p className="mt-2 text-sm text-primary-foreground/70">
               Festival main stages, club residencies, and a few late-night surprises.
             </p>
-            <Link
-              to="/about"
-              className="mt-6 inline-flex items-center gap-1 text-sm font-medium hover:opacity-80"
-            >
+            <Link to="/about" className="mt-6 inline-flex items-center gap-1 text-sm font-medium hover:opacity-80">
               Watch on Instagram <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
@@ -149,9 +148,7 @@ function Index() {
       {/* CTA */}
       <section className="border-t border-border bg-secondary">
         <div className="container-narrow flex flex-col items-start justify-between gap-6 py-16 md:flex-row md:items-center">
-          <h2 className="font-display text-3xl font-semibold md:text-4xl">
-            Got a date in mind?
-          </h2>
+          <h2 className="font-display text-3xl font-semibold md:text-4xl">Got a date in mind?</h2>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground"
