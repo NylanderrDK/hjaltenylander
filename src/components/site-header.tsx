@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Hjem" },
   { to: "/tour", label: "Tour" },
-  { to: "/about", label: "About" },
+  { to: "/about", label: "Om" },
   { to: "/contact", label: "Booking" },
 ] as const;
 
@@ -34,13 +34,9 @@ export function SiteHeader() {
           to="/contact"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 md:inline-flex"
         >
-          Book now
+          Bookingforespørgsel
         </Link>
-        <button
-          aria-label="Menu"
-          className="md:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
+        <button aria-label="Menu" className="md:hidden" onClick={() => setOpen((v) => !v)}>
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
@@ -64,7 +60,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex w-fit rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground"
             >
-              Book now
+              Bookingforespørgsel
             </Link>
           </nav>
         </div>
