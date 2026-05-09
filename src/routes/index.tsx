@@ -63,25 +63,25 @@ function Index() {
       {/* Intro */}
       <section className="container-narrow grid gap-12 py-24 md:grid-cols-[1fr_1.2fr]">
         <div>
-          <p className="eyebrow">About</p>
+          <p className="eyebrow">Om mig</p>
           <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight md:text-5xl">
-            Sound that moves the room.
+            Høj energi og dansegulv.
           </h2>
         </div>
         <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
           <p>
-            Hjalte Nylander is a Danish DJ working across the Nordic and European scene — from late-night club
-            residencies to main-stage festival slots and intimate private events.
+            DJ Hjalte Nylander er en dansk DJ, kendt i det jyske. Med jobs på klubber i hele Jylland, support for flere
+            top 50-artister, og flere private events, får du en DJ med høj energi, og garanti for dansegulv.
           </p>
           <p>
-            His sets blend driving house and melodic energy with a sharp ear for the dancefloor — crafted in real time,
-            never from a USB on autopilot.
+            Du kan forvente sing-along, hans egne producerede mashups, og musik til din stil. Det er nemlig din fest det
+            handler om!
           </p>
           <Link
             to="/about"
             className="inline-flex items-center gap-1 text-sm font-medium underline-offset-4 hover:underline"
           >
-            Read more <ArrowRight className="h-3.5 w-3.5" />
+            Læs mere <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </section>
@@ -91,8 +91,8 @@ function Index() {
         <div className="container-narrow py-24">
           <div className="flex items-end justify-between gap-6">
             <div>
-              <p className="eyebrow">Why book</p>
-              <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">Built for the moment.</h2>
+              <p className="eyebrow">Hvorfor mig?</p>
+              <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">Flere års erfaring.</h2>
             </div>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
@@ -111,11 +111,11 @@ function Index() {
       <section className="container-narrow py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="eyebrow">Upcoming</p>
-            <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">Tour dates</h2>
+            <p className="eyebrow">Kommende</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">Jobs</h2>
           </div>
           <Link to="/tour" className="text-sm font-medium underline-offset-4 hover:underline">
-            View all →
+            Se alle →
           </Link>
         </div>
         <div className="mt-12">
@@ -133,13 +133,11 @@ function Index() {
             <img src={crowdImg} alt="Festival crowd" loading="lazy" className="h-full w-full object-cover" />
           </div>
           <div className="rounded-2xl bg-primary p-8 text-primary-foreground">
-            <p className="eyebrow text-primary-foreground/60">Latest aftermovie</p>
-            <h3 className="mt-3 font-display text-2xl font-semibold">Summer ’25 highlights</h3>
-            <p className="mt-2 text-sm text-primary-foreground/70">
-              Festival main stages, club residencies, and a few late-night surprises.
-            </p>
+            <p className="eyebrow text-primary-foreground/60">Seneste aftermovie</p>
+            <h3 className="mt-3 font-display text-2xl font-semibold">Ambufesten 2025</h3>
+            <p className="mt-2 text-sm text-primary-foreground/70">Festival, klub og andre gode minder.</p>
             <Link to="/about" className="mt-6 inline-flex items-center gap-1 text-sm font-medium hover:opacity-80">
-              Watch on Instagram <ArrowRight className="h-3.5 w-3.5" />
+              Se mere på Instagram <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>
@@ -148,12 +146,12 @@ function Index() {
       {/* CTA */}
       <section className="border-t border-border bg-secondary">
         <div className="container-narrow flex flex-col items-start justify-between gap-6 py-16 md:flex-row md:items-center">
-          <h2 className="font-display text-3xl font-semibold md:text-4xl">Got a date in mind?</h2>
+          <h2 className="font-display text-3xl font-semibold md:text-4xl">Skal vi holde en fest?</h2>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground"
           >
-            Send a booking request <ArrowRight className="h-4 w-4" />
+            Send mig en forespørgsel <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
@@ -164,22 +162,22 @@ function Index() {
 const reasons = [
   {
     icon: Headphones,
-    title: "Versatile range",
-    body: "Clubs, festivals, weddings, brand activations — adapted to room and crowd.",
+    title: "Tilpasset til dig",
+    body: "Klubber, festival, firma, skole - jeg tilpasser mig netop dit event.",
   },
   {
     icon: Sparkles,
     title: "Live mixing",
-    body: "Every set is read and built in real time. Never preset, never on autopilot.",
+    body: "Jeg spiller altid live, hvilket gør det nemt for mig, at spille for dine gæster.",
   },
   {
     icon: Users,
     title: "Crowd-first",
-    body: "Reads energy and pacing to keep the floor exactly where it should be.",
+    body: "Musikken skal passe til dig og dine gæster, ikke blot hvad jeg gerne vil høre.",
   },
   {
     icon: Calendar,
-    title: "Reliable pro",
-    body: "Punctual, prepared, with full pro rider — handle the show, you handle the night.",
+    title: "Pålidelig",
+    body: "Vi laver en skudsikker aftale, så du med ro i maven kan holde styr på resten af dit event.",
   },
 ];
