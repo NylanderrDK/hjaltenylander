@@ -36,8 +36,12 @@ export function GigList({ limit, upcomingOnly = true }: { limit?: number; upcomi
   const [gigs, setGigs] = useState<Gig[] | null>(null);
 
   useEffect(() => {
-    let q = supabase.from("gigs").select("*").order("event_date", { ascending: true });
-    if (upcomingOnly) q = q.gte("event_date", new Date().toISOString().slice(0, 10));
+    const today = new Date().toISOString().slice(0, 10);
+    let q = supabase
+      .from("gigs")
+      .select("*")
+      .order("event_date", { ascending: upcomingOnly });
+    q = upcomingOnly ? q.gte("event_date", today) : q.lt("event_date", today);
     if (limit) q = q.limit(limit);
     q.then(({ data }) => setGigs((data as Gig[]) ?? []));
   }, [limit, upcomingOnly]);
