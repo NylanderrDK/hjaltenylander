@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar, Headphones, Sparkles, Users } from "lucide-react";
-import heroImg from "@/assets/hero-dj.jpg";
+import heroImg from "@/assets/hero-dj-v2.jpg";
 import crowdImg from "@/assets/crowd.jpg";
 import decksImg from "@/assets/decks.jpg";
 import { GigList } from "@/components/gig-list";
